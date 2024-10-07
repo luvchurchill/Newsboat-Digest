@@ -6,8 +6,7 @@ This project uses Google Gemini to generate summaries of your unread Newsboat fe
 
 * **Newsboat:**  This script assumes you are using Newsboat and that your database is located at `$HOME/.newsboat/cache.db`.
 * **Python 3:** Make sure you have Python 3 installed.
-* **Google Gemini API Key:** You need a Gemini API key. You can obtain one from [Google's AI Studio]
-(https://aistudio.google.com/app/).  Set the environment variable `GEMINI_API_KEY` to your key's value.
+* **Google Gemini API Key:** You need a Gemini API key. You can obtain one from [Google's AI Studio](https://aistudio.google.com/app/).  Set the environment variable `GEMINI_API_KEY` to your key's value.
 * **Required Python Packages:** Install the necessary Python packages:
 
 ```bash
@@ -49,7 +48,6 @@ The script will extract unread articles from your Newsboat database, send them t
 ## Troubleshooting
 
 * **`sqlite3.OperationalError: unable to open database file`:** Ensure the script has read access to the database file and that the path is correct.
-* **`sh: 12: [[: not found`:** Make sure you are running the `summarize.sh` script with Bash (e.g., `bash summarize.sh` or `./summarize.sh` after making it executable with `chmod +x`).
 * **API Errors:**  Check the Gemini API documentation for error codes and troubleshooting tips.
 
 ## License
